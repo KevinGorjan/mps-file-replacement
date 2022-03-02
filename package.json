@@ -1,0 +1,25 @@
+{
+  "name": "@kevingorjan/mps-file-replacement",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Kevin Gorjan <kevin.gorjan@vaimo.com>",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "@magento/pwa-buildpack": "*",
+    "webpack": "*"
+  },
+  "engines": {
+    "node": ">=10.x",
+    "yarn": ">=1.12.0"
+  },
+  "pwa-studio": {
+    "targets": {
+      "intercept": "targets/local-intercept.js"
+    }
+  }
+}
